@@ -1,0 +1,34 @@
+{
+	"ValidSkinNames": {
+		"fedorafrvector": "FedoraFrVector"
+	},
+	"AutoloadClasses": {
+		"SkinFedoraFrVector": "src/SkinFedoraFrVector.php"
+	},
+	"ResourceModules": {
+		"skins.fedorafrvector.styles": {
+			"styles": [
+				"resources/styles/skin.less"
+			]
+		},
+    "skins.fedorafrvector.js": {
+      "packageFiles": [
+        "resources/js/fedorafrvector.js"
+      ],
+      "dependencies": [
+        "jquery.tipsy"
+      ]
+    }
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "FedoraFrVector"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "FedoraFrVector\\Hooks::onBeforePageDisplay"
+	},
+	"AutoloadNamespaces": {
+		"FedoraFrVector\\": "src/"
+	},
+	"manifest_version": 1
+	}

@@ -1,0 +1,169 @@
+@import "variables.less";
+@import "mixins.less";
+
+#aside {
+    margin: 1em .3em 1em 0.5em;
+    width: @ffrv-aside-size;
+    font-size: .75em;
+    text-align: right;
+    position: absolute;
+    right: 0;
+
+    a {
+        &:link,
+        &:visited {
+            color: #000;
+            text-decoration: none;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+
+    /* Blocks */
+    .block {
+        padding: 0.5em;
+
+        p {
+            text-align: center;
+            padding: 0;
+        }
+
+        h3 {
+            .ffrv-border-radius(6px);
+            background: url(@ffrv-bgurl) 0 0 repeat-x;
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 0 0 1em 0;
+            padding: 0.2em;
+            text-align: center;
+        }
+    }
+}
+
+
+
+/* ****************************************************************** Content */
+#content {
+    margin: 1em @ffrv-aside-size 1em 1em;
+    border: 0;
+    .ffrv-box-shadow(.6em, #555);
+    padding: 1em;
+    min-height: 620px;
+
+    a, a:visited, a:link {
+        color: @ffrv-blue;
+    }
+
+    /* Heading*/
+    h1, h2, h3, h4, h5, h6 {
+        color: @ffrv-blue;
+    }
+
+    #firstHeading {
+        border-bottom: 2px solid @ffrv-blue;
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 0.1em;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    h2 {
+        border-bottom: 1px solid @ffrv-blue;
+        margin-top: 3em;
+    }
+
+    table h2 {
+        border: 0;
+    }
+
+    h3 {
+        border-bottom: 1px dotted @ffrv-blue;
+        margin-top: 2em;
+    }
+
+    h4 {
+        margin-top: 1.5em;
+    }
+
+    /* Templates */
+    .wgTemplateWarning {
+        border: 1px solid red;
+        .ffrv-border-radius(6px);
+        .ffrv-box-shadow(13px, #FFCFCF);
+        background-color: #FFCFCF;
+        color: #535068;
+        padding: 0.5em 1em 0.5em 0.7em;
+        text-align: center;
+        margin: 20px 30px;
+    }
+
+    .wgTemplate {
+        .ffrv-border-radius(6px);
+        .ffrv-box-shadow(13px, #CACBCD);
+        background-color: white;
+        padding: 0.5em 1em 0.5em 0.7em;
+        margin: 20px 30px;
+    }
+
+    pre,code,tt,kbd,samp {
+        background-color: #333333;
+        color: white;
+    }
+}
+
+
+
+/* ********************************************************************* Misc */
+#mw-page-base {
+    height: 4em;
+    background: transparent;
+    background-image: none;
+}
+
+div#mw-head {
+    top: 140px !important;
+    margin-right: @ffrv-aside-size;
+}
+
+#navigation ul li a {
+    font-size: 1em !important;
+}
+
+.mw-headline-number::after {
+    content: " - ";
+}
+
+
+
+/* ******************************************************************* Footer */
+
+#mw-footer {
+    clear:both;
+}
+
+#footer-info {
+    list-style: none;
+    font-size: .8em;
+    line-height: 1em;
+    text-align: center;
+    margin: 2em 0;
+}
+
+#footer-icons,
+#footer-places {
+  .visuallyHidden()
+}
+
+#footer {
+    font-size: .7em !important;
+
+    .sociallinks dd {
+        margin-left: 0;
+    }
+
+    a { &:link, &:visited { color: @ffrv-blue; } }
+}
