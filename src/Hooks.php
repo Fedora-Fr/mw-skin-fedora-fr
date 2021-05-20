@@ -2,7 +2,7 @@
 /**
  * FedoraFrVector - extends Vector.
  *
- *  @file
+ * @file
  * @ingroup Skins
  */
 
@@ -12,11 +12,10 @@ class Hooks {
 
   /**
    * Add external CSS
-   * @param  OutputPage $out  [description]
-   * @param  Skin       $skin [description]
-   * @return [type]           [description]
+   * @param OutputPage $out
+   * @param Ski $skin
    */
   public static function onBeforePageDisplay( \OutputPage $out, \Skin $skin ) {
-    $out->addStyle( 'https://common.fedora-fr.org/fedorafr_v5/stylesheets/forums.css', 'screen', '', '' );
+		$out->addStyle( 'https://common.fedora-fr.org/fedorafr_v5/stylesheets/forums.css', 'screen', '', '' );
   }
 }

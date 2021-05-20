@@ -1,24 +1,21 @@
 {
-	"name": "Fedora-Fr/mw-fedora-fr-skin",
+	"name": "fedora-fr/mw-fedora-fr-skin",
 	"type": "mediawiki-skin",
-	"description": "Extends Vector skin",
+	"description": "Extends Vector skin.",
 	"keywords": [
 		"wiki",
 		"MediaWiki",
 		"skin"
 	],
 	"homepage": "https://doc.fedora-fr.org",
-	"license": "GPL-2.0",
+	"license": "GPL-2.0-or-later",
 	"authors": [
 		{
 			"name": "Guillaume Kulakowski"
-		},
+		}
 	],
 	"support": {
-		"source": "https://github.com/Fedora-Fr/mw-fedora-fr-skin",
-	},
-	"require": {
-		"composer/installers": ">1.0.12"
+		"source": "https://github.com/Fedora-Fr/mw-fedora-fr-skin"
 	},
 	"extra": {
 		"installer-name": "FedoraFrVector"
@@ -32,13 +29,13 @@
 	},
 	"scripts": {
 		"fix": [
-			"minus-x fix .",
-			"phpcbf"
+			"vendor/bin/minus-x fix .",
+			"vendor/bin/phpcbf"
 		],
 		"test": [
-			"parallel-lint . --exclude node_modules --exclude vendor",
-			"phpcs -p -s",
-			"minus-x check ."
+			"vendor/bin/parallel-lint . --exclude node_modules --exclude vendor",
+			"vendor/bin/phpcs -p -s",
+			"vendor/bin/minus-x check ."
 		],
 		"phan": "phan -d . --long-progress-bar"
 	}

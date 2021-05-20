@@ -1,6 +1,8 @@
 # Skin FedoraFrVector
 
-This skin is based on Vector.
+[![Tests](https://github.com/Fedora-Fr/mw-fedora-fr-skin/actions/workflows/qa.yaml/badge.svg)](https://github.com/Fedora-Fr/mw-fedora-fr-skin/actions/workflows/qa.yaml)
+
+This MediaWiki skin is based on Vector.
 
 ## Installation
 

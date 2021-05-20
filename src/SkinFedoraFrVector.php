@@ -2,7 +2,7 @@
 /**
  * FedoraFrVector - extends Vector.
  *
- *  @file
+ * @file
  * @ingroup Skins
  */
 
@@ -17,21 +17,20 @@ class SkinFedoraFrVector extends SkinVector {
 	public $stylename = 'FedoraFrVector';
 	public $template = 'FedoraFrVectorTemplate';
 
-
   /**
-	 * @inheritDoc
-	 * @return array
-	 */
+   * @inheritDoc
+   * @return array
+   */
 	public function getDefaultModules() {
 		$modules = parent::getDefaultModules();
 
-    $modules[Constants::SKIN_NAME] = 'skins.fedorafrvector.js';
+		$modules[Constants::SKIN_NAME] = 'skins.fedorafrvector.js';
 		$modules['styles'] = array_merge(
 			$modules['styles'],
 			[ 'skins.fedorafrvector.styles' ]
 		);
 
-    return $modules;
+		return $modules;
 	}
 
   /**
@@ -40,7 +39,7 @@ class SkinFedoraFrVector extends SkinVector {
    * @param string $classname
    * @return VectorTemplate
    */
-  protected function setupTemplate( $classname ) {
+	protected function setupTemplate( $classname ) {
 		$tp = new TemplateParser( __DIR__ . '/../templates' );
 		return new \VectorTemplate( $this->getConfig(), $tp, $this->isLegacy() );
 	}
@@ -50,8 +49,7 @@ class SkinFedoraFrVector extends SkinVector {
    *
    * @return bool
    */
-  private function isLegacy() : bool {
-
-    return false;
-  }
+	private function isLegacy() : bool {
+		return false;
+	}
 }

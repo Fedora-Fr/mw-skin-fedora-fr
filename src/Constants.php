@@ -2,7 +2,7 @@
 /**
  * FedoraFrVector - extends Vector.
  *
- *  @file
+ * @file
  * @ingroup Skins
  */
 
