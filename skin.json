@@ -1,7 +1,14 @@
 {
+	"name": "FedoraFrVector",
+	"author": [
+		"Guillaume Kulakowski"
+	],
 	"ValidSkinNames": {
 		"fedorafrvector": "FedoraFrVector"
 	},
+	"url": "https://www.fedora-fr.org",
+	"license-name": "GPL-2.0-or-later",
+	"type": "skin",
 	"AutoloadClasses": {
 		"SkinFedoraFrVector": "src/SkinFedoraFrVector.php"
 	},
