@@ -1,0 +1,164 @@
+@import "mixins";
+@import "variables";
+
+/** ---------------------------------------------------------------- Override */
+body {
+    background-color: var(--background-color);
+}
+
+#footer {
+  &.mw-page-container {
+    min-height: 0%;
+  }
+}
+
+@media screen {
+  .mw-page-container-inner {
+    a, a:link, a:visited {
+      color: var(--link-color);
+    }
+  } 
+}
+
+
+/** ------------------------------------------------------------------ header */
+header.fedora-fr {
+ /* @media @phone {
+    .fedoraFrVisuallyHidden
+  }*/
+  background-color: var(--primary-color);
+  padding-bottom: 10px;
+
+  .mw-page-container {
+    background-color: var(--primary-color);
+    min-height: 0%;
+    padding: 0;
+  }
+  h1 {
+    border: none;
+    overflow: inherit;
+  }
+
+  #ffr-logo a {
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 75px;
+    width: 253px;
+    background: url('https://common.fedora-fr.org/v6/fedora-fr_white-logo.svg') no-repeat !important;
+    background-size: 253px 75px !important;
+    span {
+      .fedoraFrVisuallyHidden
+    }
+  }
+
+  nav {
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      li {
+        display: flex;
+        color: #fff;
+        font-weight: 700;
+        padding: 0 10px;
+        a {
+          color: #fff;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+
+/** ----------------------------------------------------------------- Content */
+#content {
+  /* Templates */
+  .wgTemplateWarning {
+      border: 1px solid red;
+      border-radius: 6px;
+      .fedoraFrBoxShadow(13px, #FFCFCF);
+      background-color: #FFCFCF;
+      color: #535068;
+      padding: 0.5em 1em 0.5em 0.7em;
+      text-align: center;
+      margin: 20px 30px;
+  }
+
+  .wgTemplate {
+      border-radius: 6px;
+      .fedoraFrBoxShadow(13px, var(--primary-color));
+      background-color: var(--fedorafr-light-blue);
+      padding: 0.5em 1em 0.5em 0.7em;
+      margin: 20px 30px;
+  }
+
+  pre,code,tt,kbd,samp {
+      background-color: #333333;
+      color: white;
+  }
+}
+
+
+/** ------------------------------------------------------------------ Footer */
+#fedorafrFooter {
+  background-color: var(--fedorafr-footer-bgcolor);
+  color: var(--fedorafr-footer-color1);
+  padding-bottom: 10px;
+
+  .mw-page-container {
+    background-color: var(--fedorafr-footer-bgcolor);
+    min-height: 0%;
+    clear: both;
+  }
+
+  a {
+    color: var(--fedorafr-footer-color1);
+  }
+  dl {
+    width: 25%;
+    float: left;
+    &.last {
+      dt {
+        .fedoraFrVisuallyHidden();
+      }
+      dd {
+        float: right;
+      }
+    }
+    a.fas,
+    a.fab {
+      float: left;
+      margin: 0 0.1em;
+      font-size: 4em;
+      span {
+        .fedoraFrVisuallyHidden();
+      }
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    dt {
+     color: var(--fedorafr-footer-color2);
+     font-size: 120%;
+     font-weight: bold;
+    }
+    dd {
+      margin-left: 0;
+    }
+  }
+  .disclaimer {
+    text-align: left;
+    color: var(--fedorafr-footer-color2);
+    margin-bottom: 0;
+  }
+  .partnership img {
+    vertical-align: middle;
+  }
+}

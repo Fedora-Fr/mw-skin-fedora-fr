@@ -9,10 +9,9 @@ This MediaWiki skin is based on Vector.
 ```php
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'vector', 'monobook':
-$wgDefaultSkin = "fedorafrvector";
-
-# Enabled skins.
-# The following skins were automatically enabled:
-wfLoadSkin( 'Vector' );
+$wgDefaultSkin = 'vector-2022';
+$wgVectorResponsive = true;
+$wgVectorDefaultSkinVersion = '2';
+$wgVectorDefaultSkinVersionForExistingAccounts = '2';
 wfLoadSkin( 'FedoraFrVector' );
 ```
