@@ -3,7 +3,8 @@
 
 /** ---------------------------------------------------------------- Override */
 body {
-    background-color: var(--background-color);
+  font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, Cantarell, Oxygen, Roboto, Helvetica, Arial, sans-serif;
+	background-color: var(--background-color);
 }
 
 #footer {
@@ -17,8 +18,10 @@ body {
     a, a:link, a:visited {
       color: var(--link-color);
     }
-  } 
+  }
 }
+
+li#ca-talk { display: none; }
 
 
 /** ------------------------------------------------------------------ header */
@@ -111,6 +114,7 @@ header.fedora-fr {
   background-color: var(--fedorafr-footer-bgcolor);
   color: var(--fedorafr-footer-color1);
   padding-bottom: 10px;
+	font-size: 80%;
 
   .mw-page-container {
     background-color: var(--fedorafr-footer-bgcolor);
@@ -122,6 +126,7 @@ header.fedora-fr {
     color: var(--fedorafr-footer-color1);
   }
   dl {
+		margin-top: 13px;
     width: 25%;
     float: left;
     &.last {
