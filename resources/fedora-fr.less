@@ -96,14 +96,23 @@ header.fedora-fr {
 		font-size: 0.85em;
   }
 	.tplTodo {
-    background-color: #f44336;
+    background-color: var(--fedorafr-red);
   }
 	.tplDoing {
     background-color: #03a9f4;
   }
 	.tplDone {
-    background-color: #4caf50;
+    background-color: var(--fedorafr-green);
   }
+	.fa-red {
+		color: var(--fedorafr-red);
+	}
+	.fa-green {
+		color: var(--fedorafr-green);
+	}
+	.fa-grey {
+		color: var(--fedorafr-grey);
+	}
   .tplBox {
       border: 1px solid var(--primary-color);
       background-color: var(--fedorafr-light-blue);
@@ -115,15 +124,15 @@ header.fedora-fr {
   }
 
 	.tplWarning {
-      border: 1px solid #f44336;
+      border: 1px solid var(--fedorafr-red);
       background-color: #FFCFCF;
       color: #535068;
       text-align: center;
 			.fa-big {
-        color: #f44336;
+        color: var(--fedorafr-red);
       }
 			.title {
-				color: #f44336;
+				color: var(--fedorafr-red);
 				font-weight: bold;
 			}
 			.author {
