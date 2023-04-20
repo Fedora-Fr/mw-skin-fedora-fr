@@ -91,6 +91,10 @@ header.fedora-fr {
   .tplAutor {
     text-align: right;
   }
+	.tplContributor {
+    text-align: right;
+		font-size: 0.85em;
+  }
 	.tplTodo {
     background-color: #f44336;
   }
@@ -100,38 +104,35 @@ header.fedora-fr {
 	.tplDone {
     background-color: #4caf50;
   }
-  .wgTemplateWarning, .tplWarning {
+  .tplBox, .wgTemplate {
+      border: 1px solid var(--primary-color);
+      background-color: var(--fedorafr-light-blue);
+      padding: 0.5em 1em 0.5em 0.7em;
+      margin: 20px 30px;
+      .fa-big {
+        color: var(--primary-color);
+      }
+  }
+
+	.wgTemplateWarning, .tplWarning {
       border: 1px solid #f44336;
       background-color: #FFCFCF;
       color: #535068;
-      padding: 0.5em 1em 0.5em 0.7em;
       text-align: center;
-      margin: 20px 30px;
-
       .fa-big {
         color: #f44336;
       }
   }
 	.wgTemplateQuote, .tplQuote {
+			border: 0px;
       border-left: 4px solid var(--primary-color);
-      padding: 0.5em 1em 0.5em 0.7em;
-      margin: 20px 30px;
-			.citation_author {
+			.author {
 				color: var(--primary-color);
 				text-align: right;
 			}
   }
 
-  .template, .wgTemplate {
-      border: 1px solid var(--primary-color);
-      background-color: var(--fedorafr-light-blue);
-      padding: 0.5em 1em 0.5em 0.7em;
-      margin: 20px 30px;
 
-      .fa-big {
-        color: var(--primary-color);
-      }
-  }
 
   pre,code,tt,kbd,samp {
       background-color: #333333;
