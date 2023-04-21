@@ -61,10 +61,10 @@ header.fedora-fr {
   }
 
   nav {
-      height: 55px;
-      display: flex;
-      align-items: center;
-      justify-content: right;
+		height: 55px;
+		display: flex;
+		align-items: center;
+		justify-content: right;
     ul {
       list-style-type: none;
       display: flex;
@@ -114,46 +114,53 @@ header.fedora-fr {
 		color: var(--fedorafr-grey);
 	}
   .tplBox {
-      border: 1px solid var(--primary-color);
-      background-color: var(--fedorafr-light-blue);
-      padding: 0.5em 1em 0.5em 0.7em;
-      margin: 20px 30px;
-      .fa-big {
-        color: var(--primary-color);
-      }
+		border: 1px solid var(--primary-color);
+		background-color: var(--fedorafr-light-blue);
+		padding: 0.5em 1em 0.5em 0.7em;
+		margin: 20px 30px;
+		.fa-big {
+			color: var(--primary-color);
+		}
   }
-
+	.tplNav {
+		border: 1px solid var(-fedorafr-footer-bgcolor);
+		background-color: var(--fedorafr-grey);
+		color: #fff;
+		a, a:link, a:visited: {
+			color: #fff;
+		}
+  }
 	.tplWarning {
-      border: 1px solid var(--fedorafr-red);
-      background-color: #FFCFCF;
-      color: #535068;
-      text-align: center;
-			.fa-big {
-        color: var(--fedorafr-red);
-      }
-			.title {
-				color: var(--fedorafr-red);
-				font-weight: bold;
-			}
-			.author {
-				text-align: right;
-			}
+		border: 1px solid var(--fedorafr-red);
+		background-color: #FFCFCF;
+		color: #535068;
+		text-align: center;
+		.fa-big {
+			color: var(--fedorafr-red);
+		}
+		.title {
+			color: var(--fedorafr-red);
+			font-weight: bold;
+		}
+		.author {
+			text-align: right;
+		}
   }
 	.tplQuote {
-			border: 0px;
-      border-left: 4px solid var(--primary-color);
-			.author {
-				color: var(--primary-color);
-				text-align: right;
-			}
+		border: 0px;
+		border-left: 4px solid var(--primary-color);
+		.author {
+			color: var(--primary-color);
+			text-align: right;
+		}
   }
 
 
 
   pre,code,tt,kbd,samp {
-      background-color: #fdf6e3;
-			border-radius: 4px;
-      color: #657b83;
+		background-color: #fdf6e3;
+		border-radius: 4px;
+		color: #657b83;
   }
 
   .fa-big {
