@@ -25,7 +25,7 @@ li#ca-talk { display: none; }
 
 .vector-sticky-header {
   background-color: var(--primary-color);
-	color: #fff;
+	color: var(--fedorafr-white);
 }
 
 
@@ -72,11 +72,11 @@ header.fedora-fr {
       flex-wrap: wrap;
       li {
         display: flex;
-        color: #fff;
+        color: var(--fedorafr-white);
         font-weight: 700;
         padding: 0 10px;
         a {
-          color: #fff;
+          color: var(--fedorafr-white);
           font-size: 18px;
         }
       }
@@ -99,7 +99,7 @@ header.fedora-fr {
     background-color: var(--fedorafr-red);
   }
 	.tplDoing {
-    background-color: #03a9f4;
+    background-color: var(--fedorafr-light-blue2);
   }
 	.tplDone {
     background-color: var(--fedorafr-green);
@@ -123,17 +123,17 @@ header.fedora-fr {
 		}
   }
 	.tplNav {
-		border: 1px solid var(--fedorafr-footer-bgcolor);
+		border: 1px solid var(--fedorafr-footer-bg);
 		background-color: var(--fedorafr-grey);
-		color: #fff;
+		color: var(--fedorafr-white);
 		a, a:link, a:visited {
-			color: #fff;
+			color: var(--fedorafr-white);
 		}
   }
 	.tplWarning {
 		border: 1px solid var(--fedorafr-red);
-		background-color: #FFCFCF;
-		color: #535068;
+		background-color: var(--fedorafr-warning-bg);
+		color: var(--fedorafr-warning-color);
 		text-align: center;
 		.fa-big {
 			color: var(--fedorafr-red);
@@ -154,30 +154,46 @@ header.fedora-fr {
 			text-align: right;
 		}
   }
-
-
-
-  pre,code,tt,kbd,samp {
-		background-color: #fdf6e3;
-		border-radius: 4px;
-		color: #657b83;
-  }
-
+	table.infobox {
+		border: 2px solid var(--fedorafr-green);
+		border-spacing: 0px;
+		clear: right;
+		float: right;
+		margin: 0 0 10px 20px;
+		td {
+			padding: 5px;
+		}
+		.infobox-header {
+			background-color: var(--fedorafr-green);
+			color: var(--fedorafr-white);
+		}
+		caption {
+			font-size: 0.85em;
+			font-style: italic;
+		}
+	}
   .fa-big {
     font-size: 60px;
   }
+  pre,code,tt,kbd,samp {
+		background-color: var(--fedorafr-code-bg);
+		color: var(--fedorafr-code-color);
+		border-radius: 4px;
+  }
+
+
 }
 
 
 /** ------------------------------------------------------------------ Footer */
 #fedorafrFooter {
-  background-color: var(--fedorafr-footer-bgcolor);
+  background-color: var(--fedorafr-footer-bg);
   color: var(--fedorafr-footer-color1);
   padding-bottom: 10px;
 	font-size: 80%;
 
   .mw-page-container {
-    background-color: var(--fedorafr-footer-bgcolor);
+    background-color: var(--fedorafr-footer-bg);
     min-height: 0%;
     clear: both;
   }
