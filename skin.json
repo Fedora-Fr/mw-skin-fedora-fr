@@ -90,8 +90,8 @@
 		}
 	},
 	"SkinLessImportPaths": {
-		"vector-2022": "../Vector/../Vector/resources/mediawiki.less/vector-2022",
-		"vector": "../Vector/../Vector/resources/mediawiki.less/vector"
+		"vector-2022": "../Vector/resources/mediawiki.less/vector-2022",
+		"vector": "../Vector/resources/mediawiki.less/vector"
 	},
 	"MessagesDirs": {
 		"Vector": ["../Vector/i18n"]

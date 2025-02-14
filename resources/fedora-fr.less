@@ -5,7 +5,6 @@
 /** ---------------------------------------------------------------- Override */
 body {
   font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, Cantarell, Oxygen, Roboto, Helvetica, Arial, sans-serif;
-	background-color: var(--background-color);
 }
 
 #footer {
@@ -32,16 +31,11 @@ li#ca-talk { display: none; }
 
 /** ------------------------------------------------------------------ header */
 header.fedora-fr {
- /* @media @phone {
-    .fedoraFrVisuallyHidden
-  }*/
   background-color: var(--primary-color);
   padding-bottom: 10px;
 
-  .mw-page-container {
+  .ffr-page-container {
     background-color: var(--primary-color);
-    min-height: 0%;
-    padding: 0;
   }
   h1 {
     border: none;
@@ -77,7 +71,7 @@ header.fedora-fr {
         color: var(--fedorafr-white);
         font-weight: 700;
         padding: 0 10px;
-        a {
+        a, a:visited {
           color: var(--fedorafr-white);
           font-size: 18px;
         }
