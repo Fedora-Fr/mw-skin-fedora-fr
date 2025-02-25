@@ -402,7 +402,7 @@
 			"ext.echo.styles.badge": "../Vector/skinStyles/ext.echo.styles.badge.less",
 			"+ext.echo.styles.alert": "../Vector/skinStyles/ext.echo.styles.alert.less",
 			"+mediawiki.action.edit": "../Vector/skinStyles/mediawiki.action.edit.less",
-			"+mediawiki.action.view.redirectPage": "skinStyles/mediawiki.action.view.redirectPage.less",
+			"+mediawiki.action.view.redirectPage": "../Vector/skinStyles/mediawiki.action.view.redirectPage.less",
 			"+mediawiki.notification": "../Vector/skinStyles/mediawiki.notification.less",
 			"+mediawiki.page.ready": "../Vector/skinStyles/teleportTarget.less",
 			"+oojs-ui-core.styles": "../Vector/skinStyles/ooui.less",
