@@ -55,7 +55,7 @@ class VectorComponentMainMenu implements VectorComponent {
 		);
 
 		if ( $user->isRegistered() ) {
-			//$this->optOut = new VectorComponentMainMenuActionOptOut( $skin );
+			// $this->optOut = new VectorComponentMainMenuActionOptOut( $skin );
 		}
 	}
 
