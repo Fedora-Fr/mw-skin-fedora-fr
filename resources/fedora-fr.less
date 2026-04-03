@@ -31,11 +31,11 @@ li#ca-talk { display: none; }
 
 /** ------------------------------------------------------------------ header */
 header.fedora-fr {
-  background-color: var(--primary-color);
+	background-image: linear-gradient(to right, var(--fedorafr-new-fedora-blue), var(--fedorafr-fedora-blue));
   padding-bottom: 10px;
 
   .ffr-page-container {
-    background-color: var(--primary-color);
+		background-color: transparent;
   }
   h1 {
     border: none;
@@ -78,6 +78,21 @@ header.fedora-fr {
       }
     }
   }
+}
+
+@media screen {
+	html.skin-theme-clientpref-night {
+		header.fedora-fr {
+			background-image: linear-gradient(to right, var(--fedorafr-dark-fedora-blue), var(--fedorafr-fedora-blue));
+		}
+	}
+}
+@media screen and (prefers-color-scheme: dark) {
+	html.skin-theme-clientpref-os {
+		header.fedora-fr {
+			background-image: linear-gradient(to right, var(--fedorafr-dark-fedora-blue), var(--fedorafr-fedora-blue));
+		}
+	}
 }
 
 

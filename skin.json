@@ -87,21 +87,62 @@
 					]
 				}
 			]
+		},
+		"vector": {
+			"class": "MediaWiki\\Skins\\Vector\\SkinVectorLegacy",
+			"services": ["LanguageConverterFactory"],
+			"args": [
+				{
+					"name": "vector",
+					"supportsMwHeading": true,
+					"wrapSiteNotice": true,
+					"template": "skin-legacy",
+					"clientPrefEnabled": true,
+					"templateDirectory": "includes/templates",
+					"responsive": false,
+					"link": {
+						"text-wrapper": {
+							"tag": "span"
+						}
+					},
+					"bodyClasses": ["skin-vector-legacy"],
+					"scripts": ["skins.vector.legacy.js"],
+					"styles": ["skins.vector.styles.legacy"],
+					"messages": [
+						"tooltip-p-logo",
+						"vector-opt-out-tooltip",
+						"vector-opt-out",
+						"navigation-heading",
+						"vector-action-toggle-sidebar",
+						"vector-main-menu-tooltip",
+						"vector-jumptonavigation",
+						"vector-jumptosearch",
+						"vector-jumptocontent",
+						"search",
+						"searchbutton",
+						"searcharticle",
+						"searchsuggest-search",
+						"sitesubtitle",
+						"sitetitle",
+						"tagline"
+					]
+				}
+			]
 		}
 	},
 	"SkinLessImportPaths": {
-		"vector-2022": "../Vector/resources/mediawiki.less/vector-2022",
-		"vector": "../Vector/resources/mediawiki.less/vector"
+		"vector-2022": "resources/mediawiki.less/vector-2022",
+		"vector": "resources/mediawiki.less/vector"
 	},
 	"MessagesDirs": {
-		"Vector": ["../Vector/i18n"]
+		"Vector": ["i18n"]
 	},
 	"AutoloadNamespaces": {
-		"MediaWiki\\Skins\\Vector\\": "../Vector/includes/"
+		"MediaWiki\\Skins\\Vector\\": "includes/"
 	},
 	"TestAutoloadNamespaces": {
-		"MediaWiki\\Skins\\Vector\\": "../Vector/includes/",
-		"MediaWiki\\Skins\\Vector\\Tests\\": "../Vector/tests/phpunit/"
+		"MediaWiki\\Skins\\Vector\\": "includes/",
+		"MediaWiki\\Skins\\Vector\\Tests\\": "tests/phpunit/"
 	},
 	"DefaultUserOptions": {
 		"vector-limited-width": 1,
@@ -155,14 +196,14 @@
 				"skins.vector.search.codex.scripts"
 			],
 			"packageFiles": [
-				"../Vector/resources/skins.vector.search/skins.vector.search.js",
-				"../Vector/resources/skins.vector.search/instrumentation.js",
-				"../Vector/resources/skins.vector.search/fetch.js",
-				"../Vector/resources/skins.vector.search/restSearchClient.js",
-				"../Vector/resources/skins.vector.search/urlGenerator.js",
-				"../Vector/resources/skins.vector.search/App.vue",
+				"resources/skins.vector.search/skins.vector.search.js",
+				"resources/skins.vector.search/instrumentation.js",
+				"resources/skins.vector.search/fetch.js",
+				"resources/skins.vector.search/restSearchClient.js",
+				"resources/skins.vector.search/urlGenerator.js",
+				"resources/skins.vector.search/App.vue",
 				{
-					"name": "../Vector/resources/skins.vector.search/config.json",
+					"name": "resources/skins.vector.search/config.json",
 					"callback": "MediaWiki\\Skins\\Vector\\Hooks::getVectorSearchResourceLoaderConfig"
 				}
 			],
@@ -187,7 +228,7 @@
 				"i18n-ordered-lists": true,
 				"i18n-headings": true
 			},
-			"styles": ["../Vector/resources/skins.vector.styles.legacy/skin-legacy.less"]
+			"styles": ["resources/skins.vector.styles.legacy/skin-legacy.less"]
 		},
 		"skins.vector.styles": {
 			"class": "MediaWiki\\ResourceLoader\\SkinModule",
@@ -210,8 +251,8 @@
 				"toc": false
 			},
 			"styles": [
-				"../Vector/resources/skins.vector.styles/CSSCustomProperties.less",
-				"../Vector/resources/skins.vector.styles/skin.less",
+				"resources/skins.vector.styles/CSSCustomProperties.less",
+				"resources/skins.vector.styles/skin.less",
 				"resources/fedora-fr.less"
 			],
 			"lessMessages": [
@@ -278,7 +319,7 @@
 		},
 		"skins.vector.clientPreferences": {
 			"packageFiles": [
-				"../Vector/resources/skins.vector.clientPreferences/clientPreferences.js"
+				"resources/skins.vector.clientPreferences/clientPreferences.js"
 			],
 			"messages": [
 				"skin-theme-name",
@@ -305,58 +346,58 @@
 			],
 			"dependencies": ["mediawiki.api", "mediawiki.user"],
 			"styles": [
-				"../Vector/resources/skins.vector.clientPreferences/clientPreferences.less"
+				"resources/skins.vector.clientPreferences/clientPreferences.less"
 			]
 		},
 		"skins.vector.js": {
 			"class": "MediaWiki\\ResourceLoader\\SkinModule",
-			"styles": ["../Vector/resources/skins.vector.js/index.less"],
+			"styles": ["resources/skins.vector.js/index.less"],
 			"packageFiles": [
-				"../Vector/resources/skins.vector.js/skin.js",
-				"../Vector/resources/skins.vector.js/setupIntersectionObservers.js",
-				"../Vector/resources/skins.vector.js/searchToggle.js",
-				"../Vector/resources/skins.vector.js/stickyHeader.js",
-				"../Vector/resources/skins.vector.js/scrollObserver.js",
-				"../Vector/resources/skins.vector.js/AB.js",
-				"../Vector/resources/skins.vector.js/tableOfContents.js",
-				"../Vector/resources/skins.vector.js/sectionObserver.js",
-				"../Vector/resources/skins.vector.js/deferUntilFrame.js",
-				"../Vector/resources/skins.vector.js/pinnableElement.js",
-				"../Vector/resources/skins.vector.js/userPreferences.js",
-				"../Vector/resources/skins.vector.js/features.js",
-				"../Vector/resources/skins.vector.js/popupNotification.js",
-				"../Vector/resources/skins.vector.js/clientPreferences.json",
+				"resources/skins.vector.js/skin.js",
+				"resources/skins.vector.js/setupIntersectionObservers.js",
+				"resources/skins.vector.js/searchToggle.js",
+				"resources/skins.vector.js/stickyHeader.js",
+				"resources/skins.vector.js/scrollObserver.js",
+				"resources/skins.vector.js/AB.js",
+				"resources/skins.vector.js/tableOfContents.js",
+				"resources/skins.vector.js/sectionObserver.js",
+				"resources/skins.vector.js/deferUntilFrame.js",
+				"resources/skins.vector.js/pinnableElement.js",
+				"resources/skins.vector.js/userPreferences.js",
+				"resources/skins.vector.js/features.js",
+				"resources/skins.vector.js/popupNotification.js",
+				"resources/skins.vector.js/clientPreferences.json",
 				{
-					"name": "../Vector/resources/skins.vector.js/activeABTest.json",
+					"name": "resources/skins.vector.js/activeABTest.json",
 					"callback": "MediaWiki\\Skins\\Vector\\Hooks::getActiveABTest"
 				},
 				{
-					"name": "../Vector/resources/skins.vector.js/config.json",
+					"name": "resources/skins.vector.js/config.json",
 					"config": ["VectorSearchApiUrl", "VectorWrapTablesTemporary"]
 				},
 				{
-					"name": "../Vector/resources/skins.vector.js/tableOfContentsConfig.json",
+					"name": "resources/skins.vector.js/tableOfContentsConfig.json",
 					"config": ["VectorTableOfContentsCollapseAtCount"]
 				},
 				{
-					"name": "../Vector/resources/skins.vector.js/templates/TableOfContents__list.mustache",
-					"file": "../Vector/includes/templates/TableOfContents__list.mustache",
+					"name": "resources/skins.vector.js/templates/TableOfContents__list.mustache",
+					"file": "includes/templates/TableOfContents__list.mustache",
 					"type": "text"
 				},
 				{
-					"name": "../Vector/resources/skins.vector.js/templates/TableOfContents__line.mustache",
-					"file": "../Vector/includes/templates/TableOfContents__line.mustache",
+					"name": "resources/skins.vector.js/templates/TableOfContents__line.mustache",
+					"file": "includes/templates/TableOfContents__line.mustache",
 					"type": "text"
 				},
-				"../Vector/resources/skins.vector.js/watchstar.js",
-				"../Vector/resources/skins.vector.js/portlets.js",
-				"../Vector/resources/skins.vector.js/dropdownMenus.js",
-				"../Vector/resources/skins.vector.js/tables.js",
-				"../Vector/resources/skins.vector.js/languageButton.js",
-				"../Vector/resources/skins.vector.js/echo.js",
-				"../Vector/resources/skins.vector.js/searchLoader.js",
-				"../Vector/resources/skins.vector.js/menuTabs.js",
-				"../Vector/resources/skins.vector.js/disableNightModeIfGadget.js"
+				"resources/skins.vector.js/watchstar.js",
+				"resources/skins.vector.js/portlets.js",
+				"resources/skins.vector.js/dropdownMenus.js",
+				"resources/skins.vector.js/tables.js",
+				"resources/skins.vector.js/languageButton.js",
+				"resources/skins.vector.js/echo.js",
+				"resources/skins.vector.js/searchLoader.js",
+				"resources/skins.vector.js/menuTabs.js",
+				"resources/skins.vector.js/disableNightModeIfGadget.js"
 			],
 			"dependencies": [
 				"skins.vector.clientPreferences",
@@ -385,10 +426,10 @@
 		},
 		"skins.vector.legacy.js": {
 			"packageFiles": [
-				"../Vector/resources/skins.vector.legacy.js/skin-legacy.js",
-				"../Vector/resources/skins.vector.legacy.js/portlets.js",
-				"../Vector/resources/skins.vector.legacy.js/collapsibleTabs.js",
-				"../Vector/resources/skins.vector.legacy.js/vector.js"
+				"resources/skins.vector.legacy.js/skin-legacy.js",
+				"resources/skins.vector.legacy.js/portlets.js",
+				"resources/skins.vector.legacy.js/collapsibleTabs.js",
+				"resources/skins.vector.legacy.js/vector.js"
 			],
 			"dependencies": ["mediawiki.page.ready", "mediawiki.util"]
 		}
@@ -399,67 +440,67 @@
 	},
 	"ResourceModuleSkinStyles": {
 		"vector-2022": {
-			"ext.echo.styles.badge": "../Vector/skinStyles/ext.echo.styles.badge.less",
-			"+ext.echo.styles.alert": "../Vector/skinStyles/ext.echo.styles.alert.less",
-			"+mediawiki.action.edit": "../Vector/skinStyles/mediawiki.action.edit.less",
-			"+mediawiki.action.view.redirectPage": "../Vector/skinStyles/mediawiki.action.view.redirectPage.less",
-			"+mediawiki.notification": "../Vector/skinStyles/mediawiki.notification.less",
-			"+mediawiki.page.ready": "../Vector/skinStyles/teleportTarget.less",
-			"+oojs-ui-core.styles": "../Vector/skinStyles/ooui.less",
-			"mediawiki.special.search.interwikiwidget.styles": "../Vector/skinStyles/mediawiki.special.search.interwikiwidget.less",
-			"+ext.relatedArticles.readMore": "../Vector/skinStyles/ext.relatedArticles.readMore.less",
-			"+ext.uls.compactlinks": "../Vector/skinStyles/ext.uls.compactlinks.less",
-			"+ext.uls.interface": "../Vector/skinStyles/ext.uls.interface.less",
-			"+ext.uls.pt": "../Vector/skinStyles/ext.uls.pt.less",
-			"+ext.visualEditor.base": "../Vector/skinStyles/ext.visualEditor.less",
+			"ext.echo.styles.badge": "skinStyles/ext.echo.styles.badge.less",
+			"+ext.echo.styles.alert": "skinStyles/ext.echo.styles.alert.less",
+			"+mediawiki.action.edit": "skinStyles/mediawiki.action.edit.less",
+			"+mediawiki.action.view.redirectPage": "skinStyles/mediawiki.action.view.redirectPage.less",
+			"+mediawiki.notification": "skinStyles/mediawiki.notification.less",
+			"+mediawiki.page.ready": "skinStyles/teleportTarget.less",
+			"+oojs-ui-core.styles": "skinStyles/ooui.less",
+			"mediawiki.special.search.interwikiwidget.styles": "skinStyles/mediawiki.special.search.interwikiwidget.less",
+			"+ext.relatedArticles.readMore": "skinStyles/ext.relatedArticles.readMore.less",
+			"+ext.uls.compactlinks": "skinStyles/ext.uls.compactlinks.less",
+			"+ext.uls.interface": "skinStyles/ext.uls.interface.less",
+			"+ext.uls.pt": "skinStyles/ext.uls.pt.less",
+			"+ext.visualEditor.base": "skinStyles/ext.visualEditor.less",
 			"jquery.ui": [
-				"../Vector/skinStyles/jquery.ui/jquery.ui.core.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.theme.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.accordion.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.autocomplete.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.button.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.datepicker.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.dialog.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.menu.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.progressbar.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.resizable.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.selectable.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.slider.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.tabs.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.tooltip.css"
+				"skinStyles/jquery.ui/jquery.ui.core.css",
+				"skinStyles/jquery.ui/jquery.ui.theme.css",
+				"skinStyles/jquery.ui/jquery.ui.accordion.css",
+				"skinStyles/jquery.ui/jquery.ui.autocomplete.css",
+				"skinStyles/jquery.ui/jquery.ui.button.css",
+				"skinStyles/jquery.ui/jquery.ui.datepicker.css",
+				"skinStyles/jquery.ui/jquery.ui.dialog.css",
+				"skinStyles/jquery.ui/jquery.ui.menu.css",
+				"skinStyles/jquery.ui/jquery.ui.progressbar.css",
+				"skinStyles/jquery.ui/jquery.ui.resizable.css",
+				"skinStyles/jquery.ui/jquery.ui.selectable.css",
+				"skinStyles/jquery.ui/jquery.ui.slider.css",
+				"skinStyles/jquery.ui/jquery.ui.tabs.css",
+				"skinStyles/jquery.ui/jquery.ui.tooltip.css"
 			]
 		},
 		"vector": {
 			"ext.echo.styles.badge": "skinStyles/vector/ext.echo.styles.badge.less",
 			"jquery.ui": [
-				"../Vector/skinStyles/jquery.ui/jquery.ui.core.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.theme.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.accordion.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.autocomplete.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.button.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.datepicker.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.dialog.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.menu.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.progressbar.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.resizable.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.selectable.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.slider.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.tabs.css",
-				"../Vector/skinStyles/jquery.ui/jquery.ui.tooltip.css"
+				"skinStyles/jquery.ui/jquery.ui.core.css",
+				"skinStyles/jquery.ui/jquery.ui.theme.css",
+				"skinStyles/jquery.ui/jquery.ui.accordion.css",
+				"skinStyles/jquery.ui/jquery.ui.autocomplete.css",
+				"skinStyles/jquery.ui/jquery.ui.button.css",
+				"skinStyles/jquery.ui/jquery.ui.datepicker.css",
+				"skinStyles/jquery.ui/jquery.ui.dialog.css",
+				"skinStyles/jquery.ui/jquery.ui.menu.css",
+				"skinStyles/jquery.ui/jquery.ui.progressbar.css",
+				"skinStyles/jquery.ui/jquery.ui.resizable.css",
+				"skinStyles/jquery.ui/jquery.ui.selectable.css",
+				"skinStyles/jquery.ui/jquery.ui.slider.css",
+				"skinStyles/jquery.ui/jquery.ui.tabs.css",
+				"skinStyles/jquery.ui/jquery.ui.tooltip.css"
 			],
-			"+mediawiki.action.view.redirectPage": "../Vector/skinStyles/mediawiki.action.view.redirectPage.less",
-			"+mediawiki.notification": "../Vector/skinStyles/vector/mediawiki.notification.less",
-			"+oojs-ui-core.styles": "../Vector/skinStyles/ooui.less",
-			"+ext.relatedArticles.readMore": "../Vector/skinStyles/ext.relatedArticles.readMore.less",
-			"+ext.uls.compactlinks": "../Vector/skinStyles/ext.uls.compactlinks.less",
-			"+ext.uls.interface": "../Vector/skinStyles/ext.uls.interface.less"
+			"+mediawiki.action.view.redirectPage": "skinStyles/mediawiki.action.view.redirectPage.less",
+			"+mediawiki.notification": "skinStyles/vector/mediawiki.notification.less",
+			"+oojs-ui-core.styles": "skinStyles/ooui.less",
+			"+ext.relatedArticles.readMore": "skinStyles/ext.relatedArticles.readMore.less",
+			"+ext.uls.compactlinks": "skinStyles/ext.uls.compactlinks.less",
+			"+ext.uls.interface": "skinStyles/ext.uls.interface.less"
 		}
 	},
 	"QUnitTestModule": {
 		"localBasePath": "",
 		"remoteSkinPath": "Vector",
 		"dependencies": ["skins.vector.clientPreferences"],
-		"scripts": ["../Vector/tests/integration-qunit/integration.test.js"]
+		"scripts": ["tests/integration-qunit/integration.test.js"]
 	},
 	"config": {
 		"VectorWrapTablesTemporary": {
@@ -587,6 +628,6 @@
 			"description": "@var The minimum number of headings required to collapse all headings in the sticky table of contents by default."
 		}
 	},
-	"ServiceWiringFiles": ["../Vector/includes/ServiceWiring.php"],
+	"ServiceWiringFiles": ["includes/ServiceWiring.php"],
 	"manifest_version": 2
 }

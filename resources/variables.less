@@ -1,8 +1,16 @@
-body {
-  --text-color: #212529;
-  --link-color: #007bff;
+html {
+	--fedorafr-dark-fedora-blue: #294172;
+	--fedorafr-fedora-blue: #3c6eb4;
+	--fedorafr-new-fedora-blue: #51a2d9;
+	--fedorafr-freedom-purple: #a07cbc;
+	--fedorafr-friends-magenta: #db3279;
+	--fedorafr-Features-orange: #e59728;
+	--fedorafr-first-green: #79db32;
+
+  --text-color: #000000;
+  --link-color: var(--fedorafr-new-fedora-blue);
   --primary-color: #51a2d9;
-  --background-color: #fff;
+  --background-color-base: #fff;
 
 	--fedorafr-light-blue: #e4eff6;
 	--fedorafr-light-blue2: #03a9f4;
@@ -21,3 +29,17 @@ body {
   --fedorafr-footer-color1: #999;
   --fedorafr-footer-color2: #fff;
 }
+
+@media screen {
+	html.skin-theme-clientpref-night {
+  	--background-color-base: #111827;
+		--text-color: #d1d5db;
+	}
+}
+@media screen and (prefers-color-scheme: dark) {
+	html.skin-theme-clientpref-os {
+  	--background-color-base: #111827;
+		--text-color: #d1d5db;
+	}
+}
+

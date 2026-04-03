@@ -1,44 +1,62 @@
 {
-	"name": "fedora-fr/mw-skin-fedora-fr",
+	"name": "mediawiki/vector-skin",
 	"type": "mediawiki-skin",
-	"description": "Extends Vector skin.",
+	"description": "Modern version of the MonoBook skin",
 	"keywords": [
 		"wiki",
 		"MediaWiki",
 		"skin"
 	],
-	"homepage": "https://doc.fedora-fr.org",
+	"homepage": "https://www.mediawiki.org/wiki/Skin:Vector",
 	"license": "GPL-2.0-or-later",
 	"authors": [
 		{
-			"name": "Guillaume Kulakowski"
+			"name": "Trevor Parscal"
+		},
+		{
+			"name": "Roan Kattouw"
 		}
 	],
 	"support": {
-		"source": "https://github.com/Fedora-Fr/mw-fedora-fr-skin"
+		"wiki": "https://www.mediawiki.org/wiki/Skin:Vector",
+		"forum": "https://www.mediawiki.org/wiki/Skin_talk:Vector",
+		"source": "http://gerrit.wikimedia.org/g/mediawiki/skins/Vector",
+		"irc": "irc://irc.libera.chat/mediawiki"
+	},
+	"require": {
+		"composer/installers": ">1.0.12"
 	},
 	"extra": {
-		"installer-name": "FedoraFrVector"
+		"branch-alias": {
+			"dev-master": "1.x-dev"
+		},
+		"installer-name": "Vector"
 	},
 	"require-dev": {
-		"mediawiki/mediawiki-codesniffer": "^41",
-		"mediawiki/mediawiki-phan-config": "^0.12",
-		"mediawiki/minus-x": "1.1.0",
-		"php-parallel-lint/php-console-highlighter": "0.5.0",
-		"php-parallel-lint/php-parallel-lint": "1.2.0"
+		"mediawiki/mediawiki-codesniffer": "45.0.0",
+		"mediawiki/mediawiki-phan-config": "0.14.0",
+		"mediawiki/minus-x": "1.1.3",
+		"php-parallel-lint/php-console-highlighter": "1.0.0",
+		"php-parallel-lint/php-parallel-lint": "1.4.0"
 	},
 	"scripts": {
 		"fix": [
-			"vendor/bin/minus-x fix .",
-			"vendor/bin/phpcbf"
-		],
-		"test_php": [
-			"vendor/bin/parallel-lint . --exclude node_modules --exclude vendor"
+			"minus-x fix .",
+			"phpcbf"
 		],
 		"test": [
-			"vendor/bin/phpcs -p -s",
-			"vendor/bin/minus-x check ."
+			"parallel-lint . --exclude node_modules --exclude vendor",
+			"@phpcs",
+			"minus-x check ."
 		],
-		"phan": "phan -d . --long-progress-bar"
+		"test:size": "php ../../vendor/phpunit/phpunit/phpunit -c ../../phpunit.xml.dist tests/phpunit/structure/BundleSizeTest.php",
+		"phan": "phan -d . --long-progress-bar",
+		"phpcs": "phpcs -sp --cache"
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
 	}
 }
