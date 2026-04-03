@@ -107,30 +107,31 @@ header.fedora-fr {
 		font-size: 0.85em;
   }
 	.tplTodo {
-    background-color: var(--fedorafr-red);
+    background-color: var(--fedorafr-friends-magenta);
   }
 	.tplDoing {
-    background-color: var(--fedorafr-light-blue2);
+    background-color: var(--fedorafr-new-fedora-blue);
   }
 	.tplDone {
-    background-color: var(--fedorafr-green);
+    background-color: var(--fedorafr-first-green);
   }
 	.fa-red {
-		color: var(--fedorafr-red);
+		color: var(--fedorafr-friends-magenta);
 	}
 	.fa-green {
-		color: var(--fedorafr-green);
+		color: var(--fedorafr-first-green);
 	}
 	.fa-grey {
 		color: var(--fedorafr-grey);
 	}
   .tplBox {
-		border: 1px solid var(--primary-color);
-		background-color: var(--fedorafr-light-blue);
+		color: var(--fedorafr-black);
+		border: 1px solid var(--fedorafr-fedora-blue);
+		background-color: color-mix(in srgb, var(--fedorafr-fedora-blue) 20%, var(--fedorafr-white));
 		padding: 0.5em 1em 0.5em 0.7em;
 		margin: 20px 30px;
 		.fa-big {
-			color: var(--primary-color);
+			color: var(--fedorafr-fedora-blue);
 		}
   }
 	.tplNav {
@@ -142,15 +143,15 @@ header.fedora-fr {
 		}
   }
 	.tplWarning {
-		border: 1px solid var(--fedorafr-red);
-		background-color: var(--fedorafr-warning-bg);
-		color: var(--fedorafr-warning-color);
+		border: 1px solid var(--fedorafr-friends-magenta);
+		background-color: color-mix(in srgb, var(--fedorafr-friends-magenta) 20%, var(--fedorafr-white));
+		color: color-mix(in srgb, var(--fedorafr-friends-magenta) 20%, var(--fedorafr-black));
 		text-align: center;
 		.fa-big {
-			color: var(--fedorafr-red);
+			color: var(--fedorafr-friends-magenta);
 		}
 		.title {
-			color: var(--fedorafr-red);
+			color: var(--fedorafr-friends-magenta);
 			font-weight: bold;
 		}
 		.author {
@@ -166,7 +167,7 @@ header.fedora-fr {
 		}
   }
 	table.infobox {
-		border: 2px solid var(--fedorafr-green);
+		border: 2px solid var(--fedorafr-first-green);
 		border-spacing: 0px;
 		clear: right;
 		float: right;
@@ -175,7 +176,7 @@ header.fedora-fr {
 			padding: 5px;
 		}
 		.infobox-header {
-			background-color: var(--fedorafr-green);
+			background-color: var(--fedorafr-first-green);
 			color: var(--fedorafr-white);
 		}
 		caption {
@@ -191,8 +192,6 @@ header.fedora-fr {
 		color: var(--fedorafr-code-color);
 		border-radius: 4px;
   }
-
-
 }
 
 
