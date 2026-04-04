@@ -253,6 +253,7 @@
 			"styles": [
 				"resources/skins.vector.styles/CSSCustomProperties.less",
 				"resources/skins.vector.styles/skin.less",
+				"resources/fontawesome-free/css/all.min.css",
 				"resources/fedora-fr.less"
 			],
 			"lessMessages": [
@@ -436,7 +437,7 @@
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
-		"remoteSkinPath": "Vector"
+		"remoteSkinPath": "FedoraFrVector"
 	},
 	"ResourceModuleSkinStyles": {
 		"vector-2022": {
