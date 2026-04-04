@@ -1,0 +1,101 @@
+#footer {
+  &.mw-page-container {
+    min-height: 0%;
+  }
+}
+
+#fedorafrFooter {
+  background-color: var(--fedorafr-footer-bg);
+  color: var(--fedorafr-footer-color);
+	font-size: 0.9rem;
+
+  .mw-page-container {
+    background-color: transparent;
+    min-height: 0%;
+    clear: both;
+  }
+
+  a {
+    color: var(--fedorafr-footer-color);
+  }
+
+	.columns {
+		display: flex;
+    flex-wrap: nowrap;
+
+  	.column {
+			flex-basis: 25%;
+			flex-grow: 0;
+			margin-top: 1.2rem;
+
+			h3 {
+				font-size: 1.3rem;
+				margin-bottom: 1rem;
+
+			}
+
+			ul.fedora {
+				margin: 0;
+				li {
+					list-style: none;
+					position: relative;
+					padding-left: 1.4rem;
+
+					&::before {
+						content: "\f798";
+						font-family: var(--fa-family-brands);
+						font-weight: 400;
+						position: absolute;
+						left: 0;
+						top: 0;
+					}
+				}
+			}
+
+			&.social {
+				display: flex;
+				align-items: center;
+				justify-content: end;
+
+				ul {
+					list-style: none;
+					display: flex;
+					gap: 0.5rem;
+					padding: 0;
+					margin: 0;
+				}
+
+				a.fas,
+				a.fab {
+					font-size: 4em;
+					span {
+						.fedoraFrVisuallyHidden();
+					}
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+
+  .disclaimer {
+    background-color: var(--fedorafr-black);
+		color: var(--fedorafr-white);
+		text-align: left;
+    padding: 1rem 0;
+
+		a {
+			color: var(--fedorafr-white);
+			text-decoration: underline;
+		}
+
+		p {
+			margin: 0;
+		}
+  }
+  .partnership img {
+    vertical-align: middle;
+		padding-right: 2rem;
+  }
+}

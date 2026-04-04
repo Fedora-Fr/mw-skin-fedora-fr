@@ -1,0 +1,96 @@
+#content {
+  /* Templates */
+  .tplAutor {
+    text-align: right;
+  }
+	.tplContributor {
+    text-align: right;
+		font-size: 0.85em;
+  }
+	.tplTodo {
+    background-color: var(--fedorafr-friends-magenta);
+  }
+	.tplDoing {
+    background-color: var(--fedorafr-new-fedora-blue);
+  }
+	.tplDone {
+    background-color: var(--fedorafr-first-green);
+  }
+	.fa-red {
+		color: var(--fedorafr-friends-magenta);
+	}
+	.fa-green {
+		color: var(--fedorafr-first-green);
+	}
+	.fa-grey {
+		color: var(--fedorafr-grey);
+	}
+  .tplBox {
+		color: var(--fedorafr-black);
+		border: 1px solid var(--fedorafr-fedora-blue);
+		background-color: color-mix(in srgb, var(--fedorafr-fedora-blue) 20%, var(--fedorafr-white));
+		padding: 0.5em 1em 0.5em 0.7em;
+		margin: 20px 30px;
+		.fa-big {
+			color: var(--fedorafr-fedora-blue);
+		}
+  }
+	.tplNav {
+		border: 1px solid var(--fedorafr-footer-bg);
+		background-color: var(--fedorafr-grey);
+		color: var(--fedorafr-white);
+		a, a:link, a:visited {
+			color: var(--fedorafr-white);
+		}
+  }
+	.tplWarning {
+		border: 1px solid var(--fedorafr-friends-magenta);
+		background-color: color-mix(in srgb, var(--fedorafr-friends-magenta) 20%, var(--fedorafr-white));
+		color: color-mix(in srgb, var(--fedorafr-friends-magenta) 20%, var(--fedorafr-black));
+		text-align: center;
+		.fa-big {
+			color: var(--fedorafr-friends-magenta);
+		}
+		.title {
+			color: var(--fedorafr-friends-magenta);
+			font-weight: bold;
+		}
+		.author {
+			text-align: right;
+		}
+  }
+	.tplQuote {
+		border: 0px;
+		border-left: 4px solid var(--primary-color);
+		.author {
+			color: var(--primary-color);
+			text-align: right;
+		}
+  }
+	table.infobox {
+		border: 2px solid var(--fedorafr-first-green);
+		border-spacing: 0px;
+		clear: right;
+		float: right;
+		margin: 0 0 10px 20px;
+		td {
+			padding: 5px;
+		}
+		.infobox-header {
+			background-color: var(--fedorafr-first-green);
+			color: var(--fedorafr-white);
+		}
+		caption {
+			font-size: 0.85em;
+			font-style: italic;
+		}
+	}
+  .fa-big {
+    font-size: 60px;
+  }
+  pre,code,tt,kbd,samp {
+		background-color: var(--fedorafr-code-bg);
+		color: var(--fedorafr-code-color);
+		border-radius: 4px;
+  }
+}

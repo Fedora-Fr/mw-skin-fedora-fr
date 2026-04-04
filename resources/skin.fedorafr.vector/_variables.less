@@ -1,13 +1,14 @@
-html {
+:root {
 	// Fedora-Fr
 	--fedorafr-black: #000;
 	--fedorafr-white: #fff;
+	--fedorafr-white2: #d1d5db;
   --fedorafr-grey: #9e9e9e;
-  --fedorafr-footer-bg: #343a40;
-  --fedorafr-footer-color1: #999;
-  --fedorafr-footer-color2: var(--fedorafr-white);
+  --fedorafr-footer-bg: #e5e7eb;
+  --fedorafr-footer-color: var(--fedorafr-black);
 	--fedorafr-code-bg: #fdf6e3;
 	--fedorafr-code-color: #657b83;
+	--fedorafr-font-family: "Open Sans", sans-serif;
 
 	// Fedora colors
 	--fedorafr-dark-fedora-blue: #294172;
@@ -28,17 +29,21 @@ html {
 @media screen {
 	html.skin-theme-clientpref-night {
   	--background-color-base: #111827;
-		--text-color: #d1d5db;
+		--text-color: var(--fedorafr-white2);
 		--fedorafr-code-bg: #282c34;
-		--fedorafr-code-color: #d1d5db;
+		--fedorafr-code-color: var(--fedorafr-white2);
+		--fedorafr-footer-bg: #1f2937;
+		--fedorafr-footer-color: var(--fedorafr-white2);
 	}
 }
 @media screen and (prefers-color-scheme: dark) {
 	html.skin-theme-clientpref-os {
   	--background-color-base: #111827;
-		--text-color: #d1d5db;
+		--text-color: var(--fedorafr-white2);
 		--fedorafr-code-bg: #282c34;
-		--fedorafr-code-color: #d1d5db;
+		--fedorafr-code-color: var(--fedorafr-white2);
+		--fedorafr-footer-bg: #1f2937;
+		--fedorafr-footer-color: var(--fedorafr-white2);
 	}
 }
 

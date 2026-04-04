@@ -1,0 +1,68 @@
+header.fedora-fr {
+	background-image: linear-gradient(to right, var(--fedorafr-new-fedora-blue), var(--fedorafr-fedora-blue));
+  padding-bottom: 10px;
+
+  .ffr-page-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		background-color: transparent;
+  }
+  h1 {
+    border: none;
+    overflow: inherit;
+		display: block;
+  }
+
+  #ffr-logo a {
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 75px;
+    width: 253px;
+    background: url('../images/fedora-fr_white-logo.svg') no-repeat !important;
+    background-size: 253px 75px !important;
+    span {
+			.fedoraFrVisuallyHidden();
+    }
+  }
+
+  nav {
+		height: 55px;
+		display: flex;
+		align-items: center;
+		justify-content: end;
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      li {
+        display: flex;
+        color: var(--fedorafr-white);
+        font-weight: 700;
+        padding: 0 10px;
+        a, a:visited {
+          color: var(--fedorafr-white);
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media screen {
+	html.skin-theme-clientpref-night {
+		header.fedora-fr {
+			background-image: linear-gradient(to right, var(--fedorafr-dark-fedora-blue), var(--fedorafr-fedora-blue));
+		}
+	}
+}
+@media screen and (prefers-color-scheme: dark) {
+	html.skin-theme-clientpref-os {
+		header.fedora-fr {
+			background-image: linear-gradient(to right, var(--fedorafr-dark-fedora-blue), var(--fedorafr-fedora-blue));
+		}
+	}
+}

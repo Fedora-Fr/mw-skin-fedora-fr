@@ -254,7 +254,7 @@
 				"resources/skins.vector.styles/CSSCustomProperties.less",
 				"resources/skins.vector.styles/skin.less",
 				"resources/fontawesome-free/css/all.min.css",
-				"resources/fedora-fr.less"
+				"resources/skin.fedorafr.vector/fedorafr.less"
 			],
 			"lessMessages": [
 				"parentheses-start",

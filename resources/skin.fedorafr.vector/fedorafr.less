@@ -1,0 +1,25 @@
+@import "_mixins";
+@import "_variables";
+@import "header";
+@import "content";
+@import "footer";
+
+/** ---------------------------------------------------------------- Override */
+body {
+  font-family: var(--fedorafr-font-family);
+}
+
+@media screen {
+  .mw-page-container-inner {
+    a, a:link, a:visited {
+      color: var(--link-color);
+    }
+  }
+}
+
+li#ca-talk { display: none; }
+
+.vector-sticky-header {
+  background-color: var(--primary-color);
+	color: var(--fedorafr-white);
+}
