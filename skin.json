@@ -87,47 +87,6 @@
 					]
 				}
 			]
-		},
-		"vector": {
-			"class": "MediaWiki\\Skins\\Vector\\SkinVectorLegacy",
-			"services": ["LanguageConverterFactory"],
-			"args": [
-				{
-					"name": "vector",
-					"supportsMwHeading": true,
-					"wrapSiteNotice": true,
-					"template": "skin-legacy",
-					"clientPrefEnabled": true,
-					"templateDirectory": "includes/templates",
-					"responsive": false,
-					"link": {
-						"text-wrapper": {
-							"tag": "span"
-						}
-					},
-					"bodyClasses": ["skin-vector-legacy"],
-					"scripts": ["skins.vector.legacy.js"],
-					"styles": ["skins.vector.styles.legacy"],
-					"messages": [
-						"tooltip-p-logo",
-						"vector-opt-out-tooltip",
-						"vector-opt-out",
-						"navigation-heading",
-						"vector-action-toggle-sidebar",
-						"vector-main-menu-tooltip",
-						"vector-jumptonavigation",
-						"vector-jumptosearch",
-						"vector-jumptocontent",
-						"search",
-						"searchbutton",
-						"searcharticle",
-						"searchsuggest-search",
-						"sitesubtitle",
-						"sitetitle",
-						"tagline"
-					]
-				}
-			]
 		}
 	},
 	"SkinLessImportPaths": {
